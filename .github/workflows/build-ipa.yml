@@ -36,7 +36,7 @@ jobs:
       - name: Package IPA
         run: |
           mkdir -p Payload
-          cp -r build/Build/Products/Release-iphoneos/BlockZhmer.app Payload/
+          cp -r build/Build/Products/Release-iphoneos/*.app Payload/
           zip -r BlockZhmer.ipa Payload
 
       - name: Upload IPA
